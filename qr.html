@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>QR code | LN Wondra</title>
+    <link rel="stylesheet" type="text/css" href="./public/application.css">
+</head>
+<body>
+    <header>
+        <h2>
+            <a href="./index.html">ln wondra</a>
+        </h2>
+        <ul>
+            <li>
+                <a href="./software-engineer.html">software engineer.</a>
+            </li>
+            <li>
+                <a href="./pet-herder.html">pet herder.</a>
+            </li>
+            <li>
+                <a href="./crafty.html">crafty.</a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h1>QR cross-stitch</h1>
+        <p>One of my favorite ways to marry technology and fiber arts is to cross-stitch QR codes!</p>
+        <p>QR codes, or Quick Read codes, are standardized matrix barcodes that can encode all kinds of information, including text, website URLs, and even wifi credentials. You might have landed on this page because you scanned a QR code!</p>
+    </section>
+    <section>
+        <h3>How-To</h3>
+        <p>The first step in creating your own cross-stitch QR code is to go to an online generator and create the code itself. I like to use <a href="https://www.qrcode-monkey.com/" target="_blank">QR Code Monkey</a>; it's free, it supports a wide range of data types, and it generates its QR codes as SVGs, which will become relevant in a moment.</p>
+        <p>The QR code generated is a useful representation of our end results, but it isn't a very helpful pattern, because all of the pixels we're going to stitch are already filled in; it's hard to keep track of where you are in the pattern.</p>
+        <p>To solve this problem, right-click on the pattern in your browser and select "inspect element." Then, in your developer tools, make sure the svg element is selected, and then add the following style:
+            <pre>
+                <code>
+                    filter: invert(100%);
+                    max-width: 100%;
+                    max-height: 100%;
+                </code>
+            </pre>
+            The filter inverts the colors of the svg, so that you can mark off the stitches as you make them. Setting the max-width and max-height means that when you print the page, it will print on a single page intead of attempting to spread itself across a few different pages.
+        </p>
+        <p>Now, all that's left is the stitching! Treat the page you printed out like a stitching pattern. Make a stitch for every empty white square on the page, and mark them off as you get them done (or, in my case, as you finish a row).</p>
+        <p>After the QR code itself is done, you can add a decorative border! Be sure to take the time to measure a quarter inch around your QR code, and leave that quarter inch empty buffer. If you crowd the code, it might not scan consistently, or at all.</p>
+    </section>
+</body>
