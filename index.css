@@ -1,0 +1,65 @@
+:root {
+    --text-color: navy;
+    --background-color: white;
+}
+
+.navbar {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.navbar li {
+    text-decoration: none;
+    display: inline-block;
+    margin: .5rem;
+}
+
+.navbar li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.navbar li:first-child a {
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.navbar li a:visited {
+    color: var(--text-color);
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+.navbar li a.active {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border: 3px solid var(--text-color);
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+}
