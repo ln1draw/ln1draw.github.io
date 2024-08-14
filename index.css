@@ -1,6 +1,8 @@
 :root {
     --text-color: navy;
     --background-color: white;
+    --border-radius: 0.5rem;
+    --border-width: 3px;
 }
 
 .navbar {
@@ -43,7 +45,7 @@
 .navbar li a.active {
     color: var(--background-color);
     background-color: var(--text-color);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
 }
 
 h1 {
@@ -53,13 +55,39 @@ h1 {
     margin: 2rem;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
 .content {
     width: 80%;
     margin: auto;
     font-size: 1.5rem;
     line-height: 2rem;
-    border: 3px solid var(--text-color);
-    border-radius: 0.5rem;
+    border: var(--border-width) solid var(--text-color);
+    border-radius: var(--border-radius);
     padding: 1rem 3rem;
     margin-bottom: 4rem;
+}
+
+.cat-wrapper img, .cat-text-wrapper {
+    display: inline-block;
+}
+
+.cat-text-wrapper {
+    width: 55%;
+    vertical-align: top;
+    padding: 4.5%;
+}
+
+.cat-wrapper img {
+    width: 33%;
+    border: var(--border-width) solid var(--text-color);
+    border-radius: var(--border-radius);
+}
+
+#athena-pic {
+    margin-top: 6rem;
 }
