@@ -84,10 +84,22 @@ h2 {
 
 .cat-wrapper img {
     width: 33%;
-    border: var(--border-width) solid var(--text-color);
-    border-radius: var(--border-radius);
 }
 
 #athena-pic {
     margin-top: 6rem;
+}
+
+embed {
+    max-width: 49%;
+    display: inline-block;
+}
+
+.img-wrapper {
+    text-align: center;
+}
+
+img {
+    border: var(--border-width) solid var(--text-color);
+    border-radius: var(--border-radius);
 }
